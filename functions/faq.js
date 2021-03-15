@@ -12,6 +12,7 @@ exports.handler = function (event, context, callback) {
     "question": "Is this product waterproof?",
     "answer": "Yes. You can take this anywhere and put it in any type of liquid."
   }];
+  console.log('faqs', faqs);
   callback(null, {
     headers: {
       "Access-Control-Allow-Origin": "*",
@@ -19,6 +20,6 @@ exports.handler = function (event, context, callback) {
       "Access-Control-Allow-Headers": "*",
     },
     statusCode: 200,
-    body: faqs.toString()
+    body: faqs
   });
 };
