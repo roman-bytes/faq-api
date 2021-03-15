@@ -19,6 +19,6 @@ exports.handler = function (event, context, callback) {
       "Access-Control-Allow-Headers": "*",
     },
     statusCode: 200,
-    body: faqs
+    body: faqs.toString()
   });
 };
